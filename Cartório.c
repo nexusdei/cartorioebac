@@ -142,10 +142,11 @@ int main() //função principal
 	 	setlocale(LC_ALL, "Portuguese"); //para definifir o dicionário
 	 
 	 	printf("### Cartório da EBAC ###\n\n"); //inicio do menu
-	 	printf("Escolha a opção desejada do menu:\n\n");
+	 	printf("O que faremos hoje?!\n\n");
 	 	printf("\t1 - Registrar nomes\n");
 	 	printf("\t2 - Consultar nomes\n");
-	 	printf("\t3 - Deletar nomes\n\n\n");
+	 	printf("\t3 - Deletar nomes\n");
+	 	printf("\t4 - Sair do sistema\n\n");
 	 	printf("Opção:"); //fim do menu
 	 
 		scanf("%d", &opcao); //aqui vamos scanear o que o usuário coloca, para ele poder responder
@@ -164,6 +165,11 @@ int main() //função principal
 			 
 			case 3:	
 			deletar();
+			break;
+			
+			case 4:
+			printf("Até breve, sorria e tenha um dia delicioso!\n");
+			return 0;
 			break;
 			
 			default:
